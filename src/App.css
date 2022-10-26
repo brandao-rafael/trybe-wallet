@@ -1,0 +1,219 @@
+.App {
+  text-align: center;
+}
+
+body {
+  color: rgb(59, 59, 59);
+  font-family: monospace;
+}
+
+.login-container {
+  background-color: rgb(236, 236, 236);
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 1px 7px 29px 1px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  margin: 10px auto;
+  width: 50%;
+}
+
+.login-title {
+  color: rgb(3, 107, 82);
+  font-family: monospace;
+  margin-top: -50px;
+  text-align: center;
+}
+
+.login-label {
+  display: flex;
+  flex-flow: column;
+  margin: 10px auto;
+}
+
+.login-input , .expense-form input , .expense-form select {
+  border: solid 1px black;
+  border-radius: 5px;
+  height: 25px;
+  width: 100%;
+}
+
+.login-btn {
+  align-self: center;
+  background-color: rgb(47, 193, 140);
+  border: none;
+  border-radius: 5px;
+  color: rgb(59, 59, 59);
+  height: 25px;
+  margin: 25px;
+  margin-left: 31px;
+  width: 30%;
+}
+
+.header-container {
+  align-items: center;
+  background-color: rgb(3, 107, 82);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.header-title {
+  margin-left: -120px;
+}
+
+.header-value {
+  display: flex;
+}
+
+.expense-form {
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 1px 7px 29px 1px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.expense-form button {
+  background-color: rgb(47, 193, 140);
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+}
+
+.table {
+  display: flex;
+  flex-flow: column;
+}
+
+.table-head {
+  border: solid 1px black;
+  display: flex;
+  justify-content: stretch;
+  padding: 0 auto;
+}
+
+.table-head th {
+  flex-grow: 1;
+}
+
+.table-body {
+  display: flex;
+  justify-content: stretch;
+  padding: 10px 15px;
+  width: auto;
+}
+
+.table-body td {
+  display: block;
+  flex-grow: 1;
+  max-width: 100px;
+}
+
+.table-body td:nth-child( 1 ) {
+  margin-left: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+.table-body td:nth-child( 2 ) {
+  margin-left: 15px;
+}
+
+.table-body td:nth-child( 3 ) {
+  margin-left: 45px;
+}
+
+.table-body td:nth-child( 4 ) {
+  margin-left: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-body td:nth-child( 5 ) {
+  margin-left: -5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-body td:nth-child( 6 ) {
+  margin-left: 50px;
+}
+
+.table-body td:nth-child( 7 ) {
+  margin-left: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-body td:nth-child( 8 ) {
+  margin-left: 100px;
+  max-width: 50px;
+}
+
+.table-body td:nth-child( 9 ) {
+  display: flex;
+  margin-left: 105px;
+  max-width: fit-content;
+}
+
+.edit-btn , .delete-btn {
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  height: 30px;
+  width: min-content;
+}
+
+.edit-btn {
+  background-color: rgb(3, 107, 82);
+  margin-left: 2px;
+}
+
+.delete-btn {
+  background-color: rgb(255, 38, 0);
+}
+
+@media screen and ( max-width : 450px ) {
+
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-container h1 {
+    margin: 5px auto;
+    order: -1;
+  }
+
+  .expense-form {
+    flex-direction: column;
+  }
+
+  .expense-form label {
+    margin: 10px;
+    width: 80%;
+  }
+
+  .table-head {
+    display: none;
+  }
+
+  .table-body {
+    flex-direction: column;
+  }
+
+  .table-body tr {
+    width: 100%;
+  }
+
+  .table-body td {
+    margin: 5px auto !important;
+    width: max-content;
+  }
+}
